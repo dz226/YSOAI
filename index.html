@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>西安远松智能科技有限公司</title>
+    <style>
+        :root {
+            --primary-blue: #34495e;
+            --light-blue: #ecf0f1;
+            --accent-blue: #3498db;
+            --dark-blue: #2c3e50;
+            --white: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Microsoft YaHei", sans-serif;
+            line-height: 1.6;
+            color: var(--dark-blue);
+        }
+
+        .header {
+            background: linear-gradient(rgba(52, 73, 94, 0.9), rgba(44, 62, 80, 0.9)), url('/api/placeholder/1920/600');
+            background-size: cover;
+            color: var(--white);
+            text-align: center;
+            padding: 150px 20px;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .header p {
+            font-size: 1.2em;
+            max-width: 800px;
+            margin: 0 auto;
+            color: var(--light-blue);
+        }
+
+        .nav {
+            background-color: var(--dark-blue);
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        .nav ul li {
+            margin: 0 20px;
+        }
+
+        .nav ul li a {
+            color: var(--white);
+            text-decoration: none;
+            font-size: 1.1em;
+            transition: color 0.3s ease;
+        }
+
+        .nav ul li a:hover {
+            color: var(--accent-blue);
+        }
+
+        .section {
+            padding: 80px 20px;
+        }
+
+        .section h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            color: var(--dark-blue);
+        }
+
+        .about {
+            background-color: var(--light-blue);
+        }
+
+        .services {
+            background-color: var(--white);
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .service-item {
+            background: var(--white);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(44, 62, 80, 0.1);
+            text-align: left;
+            transition: transform 0.3s ease;
+            border: 1px solid rgba(52, 73, 94, 0.1);
+        }
+
+        .service-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .service-item h3 {
+            text-align: center;
+            margin-bottom: 15px;
+            color: var(--primary-blue);
+        }
+
+        .service-item ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .service-item ul li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .service-item ul li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: var(--accent-blue);
+        }
+
+        .contact {
+            background-color: var(--light-blue);
+        }
+
+        .contact-info {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .contact-info p {
+            margin-bottom: 15px;
+        }
+
+        .footer {
+            background-color: var(--dark-blue);
+            color: var(--white);
+            text-align: center;
+            padding: 20px;
+        }
+
+        .about-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        @media (max-width: 768px) {
+            .nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .nav ul li {
+                margin: 10px 0;
+            }
+
+            .header h1 {
+                font-size: 2em;
+            }
+
+            .service-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <ul>
+            <li><a href="#home">首页</a></li>
+            <li><a href="#about">关于我们</a></li>
+            <li><a href="#services">业务范围</a></li>
+            <li><a href="#contact">联系我们</a></li>
+        </ul>
+    </nav>
+
+    <header id="home" class="header">
+        <h1>西安远松智能科技有限公司</h1>
+        <p>专注人工智能技术创新，提供全方位智能解决方案</p>
+    </header>
+
+    <section id="about" class="section about">
+        <h2>关于我们</h2>
+        <div class="about-content">
+            <p>西安远松智能科技有限公司是一家专注于人工智能技术创新与应用的高新技术企业。公司致力于为客户提供专业的人工智能解决方案、信息系统集成服务及技术咨询服务。</p>
+        </div>
+    </section>
+
+    <section id="services" class="section services">
+        <h2>业务范围</h2>
+        <div class="service-grid">
+            <div class="service-item">
+                <h3>人工智能服务</h3>
+                <ul>
+                    <li>人工智能行业应用系统集成服务</li>
+                    <li>人工智能公共服务平台技术咨询</li>
+                    <li>人工智能应用软件开发</li>
+                </ul>
+            </div>
+            <div class="service-item">
+                <h3>信息系统服务</h3>
+                <ul>
+                    <li>信息系统集成服务</li>
+                    <li>信息系统运行维护服务</li>
+                    <li>信息技术咨询服务</li>
+                </ul>
+            </div>
+            <div class="service-item">
+                <h3>技术开发服务</h3>
+                <ul>
+                    <li>网络与信息安全软件开发</li>
+                    <li>技术服务、技术开发、技术咨询</li>
+                    <li>技术交流、技术转让、技术推广</li>
+                </ul>
+            </div>
+            <div class="service-item">
+                <h3>设备销售服务</h3>
+                <ul>
+                    <li>计算机软硬件及辅助设备零售</li>
+                    <li>工业控制计算机及系统销售</li>
+                    <li>网络设备销售</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact">
+        <h2>联系我们</h2>
+        <div class="contact-info">
+            <p>地址：陕西省西咸新区沣东新城丰业大道西段天章三路1212号沣东创智云谷11号楼3B02-A</p>
+            <p>邮箱：huyi@ysoai.com</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>版权所有 © 2024 西安远松智能科技有限公司</p>
+    </footer>
+</body>
+</html>
